@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1102312997}
-  patternType: 0
+  patternType: 5
   knockbackDrag: 0
 --- !u!50 &866676589
 Rigidbody2D:
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1cc6971c2e31614e90adf6160b6deea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
+  enemyType: 5
   touchDamage: 1
   attackRange: 1.5
   attackCooldown: 1
@@ -1042,7 +1042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b43288c5aca25e47b971bbf261bfe72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPivot: {fileID: 0}
   playerShootingGunSprite: {fileID: 113235109}
   doublePumpGunSprite: {fileID: 1778779212}
 --- !u!1 &1172076449
