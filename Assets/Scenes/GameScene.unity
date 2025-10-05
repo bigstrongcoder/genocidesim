@@ -648,10 +648,6 @@ GameObject:
   - component: {fileID: 1102313002}
   - component: {fileID: 1102313003}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-  - component: {fileID: 1102313004}
->>>>>>> Stashed changes
 =======
   - component: {fileID: 1102313004}
 >>>>>>> Stashed changes
@@ -873,7 +869,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102312994}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aa6f5d532b47c4489e56b5276a4da1b, type: 3}
@@ -881,8 +876,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 25
 =======
-=======
->>>>>>> Stashed changes
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7b9f01f4439d2b41bd98ec750c5f5ee, type: 3}
@@ -913,9 +906,6 @@ MonoBehaviour:
   reloadTime: 1.5
   fireKey: 323
   reloadKey: 114
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 --- !u!1 &1172076449
 GameObject:
