@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 1102313001}
   - component: {fileID: 1102313002}
   - component: {fileID: 1102313003}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -655,9 +656,11 @@ GameObject:
 =======
   - component: {fileID: 1102313004}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of c86ef64 (working on guns)
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,14 +875,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102312994}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of c86ef64 (working on guns)
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aa6f5d532b47c4489e56b5276a4da1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Stashed changes
@@ -917,6 +924,8 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of c86ef64 (working on guns)
 --- !u!1 &1172076449
 GameObject:
   m_ObjectHideFlags: 0
