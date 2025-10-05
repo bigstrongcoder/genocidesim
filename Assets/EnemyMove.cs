@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public enum MovementType { Straight, Wave, Orbit }
+    public enum MovementType { Straight, Wave }
 
     public Transform player;
     public float moveSpeed = 5f;
@@ -11,10 +11,6 @@ public class EnemyMove : MonoBehaviour
     [Header("Wave Settings")]
     public float frequency = 5f;
     public float magnitude = 1f;
-
-    [Header("Orbit Settings")]
-    public float orbitSpeed = 120f;   // degrees per second
-    public float spiralSpeed = 1f;    
 
     [Header("Knockback Settings")]
     public float knockbackDrag = 5f;  
@@ -45,13 +41,6 @@ public class EnemyMove : MonoBehaviour
             Vector2 perpendicular = new Vector2(-toPlayer.y, toPlayer.x);
             float wave = Mathf.Sin(Time.time * frequency) * magnitude;
             aiVelocity = (toPlayer.normalized + perpendicular * wave).normalized * moveSpeed;
-        }
-        else if (patternType == MovementType.Orbit)
-        {
-            Vector2 tangent = new Vector2(-toPlayer.y, toPlayer.x).normalized;
-            float tangentialSpeed = orbitSpeed * Mathf.Deg2Rad * toPlayer.magnitude;
-            Vector2 radial = toPlayer.normalized * spiralSpeed;
-            aiVelocity = radial + tangent * tangentialSpeed;
         }
 
         // Apply knockback decay
