@@ -521,10 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1102312997}
-  moveSpeed: 4
   patternType: 0
-  frequency: 5
-  magnitude: 5
   knockbackDrag: 15
 --- !u!50 &866676589
 Rigidbody2D:
@@ -611,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610fd4eb0acb2ba4182a0854169a7c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  patternType: 6
   deathEffectPrefab: {fileID: 0}
   deathEffectDuration: 1
 --- !u!1 &1102312994
