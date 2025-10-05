@@ -647,9 +647,13 @@ GameObject:
   - component: {fileID: 1102313001}
   - component: {fileID: 1102313002}
   - component: {fileID: 1102313003}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 1102313004}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -864,12 +868,45 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102312994}
+<<<<<<< Updated upstream
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aa6f5d532b47c4489e56b5276a4da1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+=======
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b9f01f4439d2b41bd98ec750c5f5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  cooldown: 0.5
+--- !u!114 &1102313004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102312994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4b9003b35f3ec43bdaa32bfe059cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotgunPelletPrefab: {fileID: 8766947204055857675, guid: 0542b1bdb93e8a241a7856794509c1e3, type: 3}
+  firePoint: {fileID: 0}
+  pelletsPerShot: 20
+  spreadAngle: 30
+  shotsBeforeReload: 2
+  pelletSpeed: 2
+  recoilForce: 5
+  fireRate: 0.3
+  reloadTime: 1.5
+  fireKey: 323
+  reloadKey: 114
+>>>>>>> Stashed changes
 --- !u!1 &1172076449
 GameObject:
   m_ObjectHideFlags: 0
