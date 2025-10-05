@@ -2,13 +2,42 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float health = 5f;
+    [Header("Health Settings")]
+    public int maxHealth = 100;
+    private int currentHealth;
 
-    public void TakeDamage(float damage)
+    [Header("Death Settings")]
+    public GameObject deathEffectPrefab;
+    public float deathEffectDuration = 1f;
+
+    void Start()
     {
-        health -= damage;
-        if (health <= 0) {
-            Destroy(gameObject);
+        currentHealth = maxHealth;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        // Optional: Flash effect or damage feedback here
+
+        if (currentHealth <= 0)
+        {
+            Die();
         }
+    }
+
+    void Die()
+    {
+        // Spawn death effect if assigned
+        if (deathEffectPrefab != null)
+        {
+            GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(effect, deathEffectDuration);
+        }
+
+        // You can add score here, drop taxes/coins, etc.
+
+        Destroy(gameObject);
     }
 }
